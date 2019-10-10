@@ -4,7 +4,39 @@
   "description": "",
   "main": "/src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "productName": "Xiaohui-Manage", 
+    "appId": "com.huirui-team.Xiaohui-Manage",
+    "copyright": "Huirui-Team",
+    "directories": {
+      "output": "app/dist"
+    },
+    "win": {  
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false, 
+      "allowElevation": true, 
+      "allowToChangeInstallationDirectory": true, 
+      "installerIcon": "./build/icons/aaa.ico",
+      "uninstallerIcon": "./build/icons/bbb.ico",
+      "installerHeaderIcon": "./build/icons/aaa.ico", 
+      "createDesktopShortcut": true, 
+      "createStartMenuShortcut": true,
+      "shortcutName": "xxxx", 
+      "include": "build/script/installer.nsh", 
+      "script" : "build/script/installer.nsh" 
+    } 
   },
   "repository": {
     "type": "git",
@@ -16,7 +48,8 @@
     "url": "https://github.com/bluecloudi/Xiaohui-Manage/issues"
   },
   "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^4.0.2",
     "electron-builder": "^21.2.0"
   }
 }
