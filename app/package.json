@@ -1,53 +1,55 @@
 {
-    "name": "xiaohui",
-    "version": "0.1.0",
-    "description": "",
-    "main": "/src/main.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "electron .",
-      "dist": "electron-builder",
-      "pack": "electron-builder --dir"
+  "name": "xiaohui",
+  "version": "0.1.0",
+  "description": "",
+  "main": "/src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "productName": "Xiaohui-Manage",
+    "appId": "com.huirui-team.Xiaohui-Manage",
+    "copyright": "Huirui-Team",
+    "directories": {
+      "output": "app/dist"
     },
-    "build": {
-      "productName": "Xiaohui-Manage", 
-      "appId": "com.huirui-team.Xiaohui-Manage",
-      "copyright": "Huirui-Team",
-      "directories": {
-        "output": "app/dist"
-      },
-      "files": [
-        "src/**/*"
-      ],
-      "win": {  
-        "icon": "build/icon.ico",
-        "target": [
-          "nsis",
-          "zip"
-        ]
-      },
-      "nsis": {
-        "oneClick": false, 
-        "allowElevation": true, 
-        "allowToChangeInstallationDirectory": true, 
-        "installerIcon": "./build/icon.ico",
-        "uninstallerIcon": "./build/icon.ico",
-        "installerHeaderIcon": "./build/icon.ico", 
-        "createDesktopShortcut": true, 
-        "createStartMenuShortcut": true,
-        "shortcutName": "Xiaohui Manage"
-      } 
+    "files": [
+      "src/**/*"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
     },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/bluecloudi/Xiaohui-Manage.git"
-    },
-    "author": "huirui-team",
-    "license": "Apache 2.0",
-    "bugs": {
-      "url": "https://github.com/bluecloudi/Xiaohui-Manage/issues"
-    },
-    "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
-    "devDependencies": {}
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./build/icon.ico",
+      "uninstallerIcon": "./build/icon.ico",
+      "installerHeaderIcon": "./build/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Xiaohui Manage"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluecloudi/Xiaohui-Manage.git"
+  },
+  "author": "huirui-team",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/bluecloudi/Xiaohui-Manage/issues"
+  },
+  "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^6.0.12"
   }
-  
+}
