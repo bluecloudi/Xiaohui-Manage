@@ -1,7 +1,3 @@
-const{clean}=require('./clean')
-function defaultTask(cb) {
-    // place code for your default task here
-    cb();
-  }
-  
-exports.default = defaultTask
+const{clean}=require('./clean') ;
+const{series}=require('gulp');
+exports.default= series(clean);
