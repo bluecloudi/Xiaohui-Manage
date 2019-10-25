@@ -9,8 +9,8 @@ const{stylus}=require('gulp-stylus');
 //        .pipe(gulp.dest('css/'))
 //    cb();
 //});
-function stylus(cb){
+function compilestylus(cb){
     src('stylusExample/src/*.styl').pipe(stylus({use:[nib()]})).pipe(dest('css/'));
     cb();
 }
-exports.stylus=stylus;
+exports.compilestylus=compilestylus;

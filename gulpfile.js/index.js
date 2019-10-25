@@ -1,3 +1,5 @@
-const{clean}=require('./clean') ;
+const{clean}=require('./clean');
+const{compilestylus}=require('./stylus');
 const{series}=require('gulp');
-exports.default= series(clean);
+const{test}=require('./test');
+exports.default= series(clean,compilestylus,test);
