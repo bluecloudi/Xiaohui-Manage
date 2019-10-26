@@ -50,12 +50,5 @@
   "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
   "dependencies": {},
   "devDependencies": {
-    "del": "^5.1.0",
-    "electron": "^6.0.12",
-    "electron-builder": "^21.2.0",
-    "gulp": "^4.0.2",
-    "gulp-stylus": "^2.7.0",
-    "nib": "^1.1.2",
-    "stylus": "^0.54.7"
   }
 }
