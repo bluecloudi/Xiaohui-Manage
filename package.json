@@ -56,6 +56,7 @@
     "del": "^5.1.0",
     "electron": "^7.0.1",
     "electron-builder": "^21.2.0",
+    "electron-chromedriver": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-stylus": "^2.7.0",
     "mocha": "^6.2.2",

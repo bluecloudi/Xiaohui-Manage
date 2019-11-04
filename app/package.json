@@ -49,5 +49,7 @@
   },
   "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "electron": "^7.0.1"
+  }
 }
