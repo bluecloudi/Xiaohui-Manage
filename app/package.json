@@ -4,7 +4,7 @@
   "description": "",
   "main": "/src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "electron .",
     "dist": "electron-builder",
     "pack": "electron-builder --dir"
@@ -49,7 +49,5 @@
   },
   "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
   "devDependencies": {},
-  "dependencies": {
-    "electron": "^6.0.12"
-  }
+  "dependencies": {}
 }

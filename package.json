@@ -4,7 +4,7 @@
   "description": "",
   "main": "/src/main.js",
   "scripts": {
-    "test": "gulp test",
+    "test": "mocha",
     "start": "electron .",
     "dist": "electron-builder",
     "pack": "electron-builder --dir"
@@ -50,7 +50,17 @@
   "homepage": "https://github.com/bluecloudi/Xiaohui-Manage#readme",
   "dependencies": {},
   "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "del": "^5.1.0",
+    "electron": "^7.0.1",
     "electron-builder": "^21.2.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-stylus": "^2.7.0",
+    "mocha": "^6.2.2",
+    "nib": "^1.1.2",
+    "spectron": "^9.0.0",
+    "stylus": "^0.54.7"
   }
 }
