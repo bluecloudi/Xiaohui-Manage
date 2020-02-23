@@ -2,9 +2,8 @@
   "name": "xiaohui",
   "version": "0.1.0",
   "description": "",
-  "main": "/src/main.js",
+  "main": "/src/main/main.js",
   "scripts": {
-    "test": "mocha",
     "start": "electron .",
     "dist": "electron-builder",
     "pack": "electron-builder --dir"
@@ -51,16 +50,17 @@
   "dependencies": {},
   "devDependencies": {
     "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
+    "assert": "^2.0.0",
     "del": "^5.1.0",
-    "electron": "^7.0.1",
     "electron-builder": "^21.2.0",
     "electron-chromedriver": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-stylus": "^2.7.0",
+    "jest": "^25.1.0",
     "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
     "nib": "^1.1.2",
+    "path": "^0.12.7",
     "spectron": "^9.0.0",
     "stylus": "^0.54.7"
   }

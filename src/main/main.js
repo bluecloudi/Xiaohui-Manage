@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // 加载index.html文件
-  win.loadURL('file://'+__dirname+'/src/uglify/renderer/index.html')
+  win.loadURL('file://'+__dirname+'/src/renderer/main-page.html')
 
   // 打开开发者工具
   //win.webContents.openDevTools()
@@ -54,3 +54,4 @@ function close(){
   app.quit()
 }
 exports.close=close;
+exports.createWindow=createWindow;
